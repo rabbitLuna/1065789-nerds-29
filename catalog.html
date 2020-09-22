@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Academy: Нёрдс</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-header-nav">
+            <a class="main-header-logo">
+                <img src="" width="" height="" alt="Nerds">
+            </a>
+
+            <ul class="site-navigation">
+                <li class="site-navigation-item">
+                    <a href="#">Студия</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a href="#">Клиенты</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a href="#">Магазин</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a href="#">Контакты</a>
+                </li>
+            </ul>
+            <a class="basket" href="#">Корзина</a>
+        </nav>
+
+    </header>
+
+    <main class="main-content">
+        <h1>Магазин готовых шаблонов</h1>
+
+        <aside class="navigation">
+            <form action="" method="post">
+                <span class="navigation-heading">Стоимость</span>
+                <div class="slider">
+                    <div class="slider-strip"></div>
+                    <div class="slider-active-strip"></div>
+                    <div class="slider-toggle toggle-one"></div>
+                    <div class="slider-toggle toggle-two"></div>
+                </div>
+
+                <div class="slider-price">
+                    <label class="slider-price-filter">
+                        От
+                        <input class="slider-price-input" name="price-filter-from" type="text" value="0">
+                    </label>
+                    <label class="slider-price-filter">
+                        До
+                        <input class="slider-price-input" name="price-filter-before" type="text" value="15 000">
+                    </label>
+                </div>
+
+                <div class="grid">
+                    <span class="navigation-heading">Сетка</span>
+
+                    <label>
+                        <input type="radio" name="radio-grid" class="filter-grid" value="Adaptive"> Адаптивная
+                    </label>
+
+                    <label>
+                        <input type="radio" name="radio-grid" class="filter-grid" value="Rubber" checked> Резиновая
+                    </label>
+
+                    <label>
+                        <input type="radio" name="radio-grid" class="filter-grid" value="Fixed"> Фиксированная
+                    </label>
+
+
+                </div>
+                <div class="features">
+                    <span class="navigation-heading">Особенности</span>
+
+                    <input type="checkbox" name="slider-features" id="slider-features-slider" checked>
+                    <label for="slider-features-slider">Слайдер</label>
+
+                    <input type="checkbox" name="slider-features" id="slider-features-advantages">
+                    <label for="slider-features-advantages">Блок преимуществ</label>
+
+                    <input type="checkbox" name="slider-features" id="slider-features-news" checked>
+                    <label for="slider-features-news">Новости</label>
+
+                    <input type="checkbox" name="slider-features" id="slider-features-gallery">
+                    <label for="slider-features-gallery">Галерея</label>
+
+                    <input type="checkbox" name="slider-features" id="slider-features-basket">
+                    <label for="slider-features-basket">Корзина</label>
+                </div>
+
+                <button class="filter-buttom" type="button">Показать</button>
+            </form>
+        </aside>
+
+        <div class="wrapper">
+            <div class="filter">
+                <ul class="filter-sort">
+                    <li class="filter-sort-item">
+                        <a href="#">По цене</a>
+                    </li>
+                    <li class="filter-sort-item">
+                        <a href="#">По типу</a>
+                    </li>
+                    <li class="filter-sort-item">
+                        <a href="#">По названию</a>
+                    </li>
+                </ul>
+
+                <div class="button-toggle">
+                    <button class="button-toggle button-down" type="button"></button>
+                    <button class="button-toggle button-up" type="button"></button>
+                </div>
+
+            </div>
+
+            <div class="catalog">
+                <div class="catalog-item">
+                    <img src="" width="" height="" alt="Sedona">
+                </div>
+                <div class="catalog-item">
+                    <img src="" width="" height="" alt="Pink">
+                </div>
+                <div class="catalog-item">
+                    <img src="" width="" height="" alt="Borodinsky">
+                </div>
+                <div class="catalog-item">
+                    <img src="" width="" height="" alt="Mishka">
+                </div>
+                <div class="catalog-item">
+                    <img src="" width="" height="" alt="Aplus">
+                </div>
+                <div class="catalog-item">
+                    <img src="" width="" height="" alt="Кваст">
+                </div>
+
+            </div>
+
+            <ul class="pagination">
+                <li class="pagination-item">
+                    <a href="#" class="pagination-link">1</a>
+                    <a href="#" class="pagination-link">2</a>
+                    <a href="#" class="pagination-link">3</a>
+                    <a href="#" class="pagination-link">Следующая</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="map">
+            <div class="map-form">
+                <h3 class="map-form-heading">Nerds design studio</h3>
+                <span class="map-form-address">91186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                <a href="tel:78122757575" class="map-form-phone">тел. +7 (812) 275-75-75</a>
+                <a href="#" class="button map-form-button">Напишите нам</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <ul class="social">
+                <li class="social-item">
+                    <a href="#">vkontakte</a>
+                </li>
+                <li class="social-item">
+                    <a href="#">facebook</a>
+                </li>
+                <li class="social-item">
+                    <a href="#">instagram</a>
+                </li>
+            </ul>
+
+            <div class="footer-text">
+                <p class="main-footer-heading">Давайте дружить, это выгодно!</p>
+                <p class="main-footer-offer">Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </div>
+
+    </footer>
+</body>
