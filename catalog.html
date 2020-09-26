@@ -10,25 +10,25 @@
 <body>
     <header class="main-header">
         <nav class="main-header-nav">
-            <a class="main-header-logo">
+            <a href="#!" class="main-header-logo">
                 <img src="" width="" height="" alt="Nerds">
             </a>
 
             <ul class="site-navigation">
                 <li class="site-navigation-item">
-                    <a href="#">Студия</a>
+                    <a href="#!">Студия</a>
                 </li>
                 <li class="site-navigation-item">
-                    <a href="#">Клиенты</a>
+                    <a href="#!">Клиенты</a>
                 </li>
                 <li class="site-navigation-item">
-                    <a href="#">Магазин</a>
+                    <a href="#!">Магазин</a>
                 </li>
                 <li class="site-navigation-item">
-                    <a href="#">Контакты</a>
+                    <a href="#!">Контакты</a>
                 </li>
             </ul>
-            <a class="basket" href="#">Корзина</a>
+            <a class="basket" href="#!">Корзина</a>
         </nav>
 
     </header>
@@ -37,18 +37,17 @@
         <h1>Магазин готовых шаблонов</h1>
 
         <div class="wrapper">
-
             <section class="filter">
                 <form action="https://echo.htmlacademy.ru/" method="post">
-                    <span class="filter-heading">Стоимость</span>
-                    <div class="slider">
-                        <div class="slider-strip"></div>
-                        <div class="slider-active-strip"></div>
-                        <div class="slider-toggle "></div>
-                        <div class="slider-toggle"></div>
-                    </div>
 
-                    <fieldset class="slider-form">
+                    <fieldset class="filter-price">
+                        <legend class="filter-heading">Стоимость</legend>
+                        <div class="slider">
+                            <div class="slider-strip"></div>
+                            <div class="slider-active-strip"></div>
+                            <div class="slider-toggle"></div>
+                            <div class="slider-toggle"></div>
+                        </div>
                         <label class="price">
                             От
                             <input class="price-input" name="filter-from" type="text" placeholder="0">
@@ -60,22 +59,20 @@
                     </fieldset>
 
                     <fieldset class="filter-grid">
-                        <legend class="filter-heading"> Сетка</legend>
+                        <legend class="filter-heading">Сетка</legend>
                         <label class="radio-label">
-                            <input type="radio" name="radio-grid" class="radio-button" value="Adaptive"> Адаптивная
+                            <input type="radio" name="radio-grid" class="radio-button" value="adaptive">Адаптивная
                         </label>
 
                         <label class="radio-label">
-                            <input type="radio" name="radio-grid" class="radio-button" value="Rubber" checked>
-                            Резиновая
+                            <input type="radio" name="radio-grid" class="radio-button" value="rubber" checked>Резиновая
                         </label>
 
                         <label class="radio-label">
-                            <input type="radio" name="radio-grid" class="radio-button" value="Fixed"> Фиксированная
+                            <input type="radio" name="radio-grid" class="radio-button" value="fixed">Фиксированная
                         </label>
 
                     </fieldset>
-
 
                     <fieldset class="filter-features">
                         <legend class="filter-heading">Особенности</legend>
@@ -109,19 +106,19 @@
                 <div class="catalog-sort">
                     <ul class="catalog-filter-sort">
                         <li class="catalog-filter-sort-item">
-                            <a href="#">По цене</a>
+                            <a class="catalog-filter-sort-link" href="#!">По цене</a>
                         </li>
                         <li class="catalog-filter-sort-item">
-                            <a href="#">По типу</a>
+                            <a class="catalog-filter-sort-link" href="#!">По типу</a>
                         </li>
                         <li class="catalog-filter-sort-item">
-                            <a class="catalog-filter-sort-link" href="#">По названию</a>
+                            <a class="catalog-filter-sort-link" href="#!">По названию</a>
                         </li>
                     </ul>
 
                     <div class="sort-direction-container">
-                        <button class="sort-direction-button down" type="button"></button>
-                        <button class="sort-direction-button up" type="button"></button>
+                        <button class="sort-direction-button down" type="button">Сортировка по убыванию</button>
+                        <button class="sort-direction-button up" type="button">Сортировка по возрастанию</button>
                     </div>
 
                 </div>
@@ -134,8 +131,8 @@
                             <div class="catalog-item-dot"></div>
                         </div>
                         <div class="catalog-item-info">
-                            <h2 class="heading">Sedona</h2>
-                            <p class="text">Информационный сайт для туристов</p>
+                            <h2 class="info-heading">Sedona</h2>
+                            <p class="info-text">Информационный сайт для туристов</p>
                             <button class="button" type="button">9 900 ₽</button>
                         </div>
                     </div>
@@ -146,8 +143,8 @@
                             <div class="catalog-item-dot"></div>
                         </div>
                         <div class="catalog-item-info">
-                            <h2 class="heading">Pink</h2>
-                            <p class="text">Информационный сайт для туристов</p>
+                            <h2 class="info-heading">Pink</h2>
+                            <p class="info-text">Информационный сайт для туристов</p>
                             <button class="button" type="button">9 900 ₽</button>
                         </div>
                     </div>
@@ -158,8 +155,8 @@
                             <div class="catalog-item-dot"></div>
                         </div>
                         <div class="catalog-item-info">
-                            <h2 class="heading">Borodinsky</h2>
-                            <p class="text">Информационный сайт для туристов</p>
+                            <h2 class="info-heading">Borodinsky</h2>
+                            <p class="info-text">Информационный сайт для туристов</p>
                             <button class="button" type="button">9 900 ₽</button>
                         </div>
                     </div>
@@ -170,8 +167,8 @@
                             <div class="catalog-item-dot"></div>
                         </div>
                         <div class="catalog-item-info">
-                            <h2 class="heading">Mishka</h2>
-                            <p class="text">Информационный сайт для туристов</p>
+                            <h2 class="info-heading">Mishka</h2>
+                            <p class="info-text">Информационный сайт для туристов</p>
                             <button class="button" type="button">9 900 ₽</button>
                         </div>
                     </div>
@@ -182,8 +179,8 @@
                             <div class="catalog-item-dot"></div>
                         </div>
                         <div class="catalog-item-info">
-                            <h2 class="heading">Aplus</h2>
-                            <p class="text">Информационный сайт для туристов</p>
+                            <h2 class="info-heading">Aplus</h2>
+                            <p class="info-text">Информационный сайт для туристов</p>
                             <button class="button" type="button">9 900 ₽</button>
                         </div>
                     </div>
@@ -194,8 +191,8 @@
                             <div class="catalog-item-dot"></div>
                         </div>
                         <div class="catalog-item-info">
-                            <h2 class="heading">Кваст</h2>
-                            <p class="text">Информационный сайт для туристов</p>
+                            <h2 class="info-heading">Кваст</h2>
+                            <p class="info-text">Информационный сайт для туристов</p>
                             <button class="button" type="button">9 900 ₽</button>
                         </div>
                     </div>
@@ -204,23 +201,21 @@
 
                 <ul class="pagination">
                     <li class="pagination-item">
-                        <a href="#" class="pagination-link link-active">1</a>
-                    </li>
-                    <li class="pagination-item"><a href="#" class="pagination-link">2</a>
-                    </li>
-                    <li class="pagination">
-                        <a a href="№" class="pagination-link">3</a>
+                        <a href="#!" class="pagination-link link-active">1</a>
                     </li>
                     <li class="pagination-item">
-                        <a href="#" class="pafination-link">Следующая</a>
+                        <a href="#!" class="pagination-link">2</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#!" class="pagination-link">3</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#!" class="pagination-link">Следующая</a>
                     </li>
                 </ul>
-        </div>
-        </section>
 
+            </section>
         </div>
-
-    </main>
     </main>
 
     <footer class="footer">
@@ -230,20 +225,20 @@
                 <h3 class="map-form-heading">Nerds design studio</h3>
                 <span class="map-form-address">91186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
                 <a href="tel:78122757575" class="map-form-phone">тел. +7 (812) 275-75-75</a>
-                <a href="#" class="button map-form-button">Напишите нам</a>
+                <a href="#!" class="button map-form-button">Напишите нам</a>
             </div>
         </div>
 
         <div class="footer-bottom">
             <ul class="social">
                 <li class="social-item">
-                    <a href="#">vkontakte</a>
+                    <a href="#!">vkontakte</a>
                 </li>
                 <li class="social-item">
-                    <a href="#">facebook</a>
+                    <a href="#!">facebook</a>
                 </li>
                 <li class="social-item">
-                    <a href="#">instagram</a>
+                    <a href="#!">instagram</a>
                 </li>
             </ul>
 
