@@ -282,11 +282,15 @@ a {
     list-style: none;
 }
 
-.companies-site:hover {
-    color: var(--сolor-black-10);
+.companies-site-item {
+    opacity: 0.2;
 }
 
-.companies-site:active {
+.companies-site-item:hover {
+    opacity: 1;
+}
+
+.companies-site-item:active {
     opacity: 0.1;
 }
 
