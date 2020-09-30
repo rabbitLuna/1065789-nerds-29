@@ -3,6 +3,7 @@
     --сolor-grey-15: #DFDFDF;
     --color-grey-20: #E1E1E1;
     --color-grey-25: #D5D5D5;
+    --color-grey-30: #A6A6A6;
     --сolor-black-10: #000000;
     --color-black-15: #444444;
     --color-black-17: #666666;
@@ -107,12 +108,16 @@ a {
     margin-right: 45px;
 }
 
-.basket a:hover {
+.basket:hover {
     color: var(--color-red-10);
 }
 
-.basket a:active {
-    color: var(--сolor-black-10);
+.basket:active {
+    opacity: 0.3;
+}
+
+.main-header-logo:active {
+    opacity: 0.2;
 }
 
 /*button*/
@@ -266,6 +271,21 @@ a {
     color: var(--color-black-15);
 }
 
+.about-table-interest {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 64px;
+    font-style: normal;
+    color: var(--сolor-black-10);
+}
+
+sup {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 40px;
+    font-style: normal;
+}
+
 /*services*/
 
 .services-content {
@@ -361,6 +381,26 @@ a {
     font-size: 16px;
     line-height: 18px;
     color: var(--color-black-17);
+}
+
+.about-list {
+    padding: 0;
+}
+
+.about-list-item {
+    list-style: none;
+    position: relative;
+    padding-left: 32px;
+}
+
+.about-list-item::before {
+    content: "";
+    background-color: var(--color-red-10);
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 12px;
 }
 
 /* CATALOG */
