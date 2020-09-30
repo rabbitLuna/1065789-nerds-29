@@ -5,6 +5,7 @@
     --color-grey-25: #D5D5D5;
     --сolor-black-10: #000000;
     --color-black-15: #444444;
+    --color-black-17:  #666666;
     --color-black-20: #283136;
     --color-white: #FFFFFF;
     --color-red-10: #FB565A;
@@ -297,6 +298,7 @@ a {
 .map-form {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 
 .about {
@@ -320,7 +322,6 @@ a {
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
-    text-transform: uppercase;
 }
 
 .map-form-phone {
@@ -328,7 +329,7 @@ a {
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
-    text-transform: uppercase;
+    color: var(--color-black-17);
 }
 
 /* CATALOG */
