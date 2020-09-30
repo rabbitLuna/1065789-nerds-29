@@ -80,7 +80,6 @@ a {
     font-size: 16px;
     line-height: 30px;
     margin: 0;
-    line-height: 30px;
     list-style: none;
     color: var(--сolor-black-10);
 }
@@ -120,14 +119,14 @@ a {
     color: var(--color-white);
     background-color: var(--color-red-10);
     height: 50px;
-    width: 160px;
+    min-width: 160px;
     text-transform: uppercase;
     border-radius: 3px;
     border: 0;
 }
 
 .button.button-large {
-    width: 240px;
+    min-width: 240px;
 }
 
 .button.button-green {
@@ -139,7 +138,7 @@ a {
 }
 
 .button.map-form-button {
-    width: 219px;
+    min-width: 219px;
 }
 
 .button:active {
@@ -166,7 +165,9 @@ a {
     font-weight: 700;
     line-height: 30px;
     font-style: normal;
+    text-transform: uppercase;
     color: var(--сolor-black-10);
+
 }
 
 .about-main-heading {
@@ -182,6 +183,7 @@ a {
     font-weight: 700;
     line-height: 24px;
     font-style: normal;
+    text-transform: uppercase;
     color: var(--сolor-black-10);
 }
 
@@ -190,6 +192,7 @@ a {
     font-weight: 700;
     line-height: 30px;
     font-style: normal;
+    text-transform: uppercase;
     color: var(--сolor-black-10);
 }
 
