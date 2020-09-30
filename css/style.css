@@ -1,6 +1,8 @@
 :root {
     --color-grey-10: #EEEEEE;
+    --сolor-grey-15: #DFDFDF;
     --color-grey-20: #E1E1E1;
+    --color-grey-25: #D5D5D5;
     --сolor-black-10: #000000;
     --color-black-15: #444444;
     --color-black-20: #283136;
@@ -10,6 +12,22 @@
     --color-red-20: #D7373B;
     --color-green: #00CA74;
     --color-yellow: #EFC849;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto.woff') format('woff'), url('../fonts/roboto.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fonts/robotomedium.woff') format('woff'), url('../fonts/robotomedium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/robotobold.woff') format('woff'), url('../fonts/robotobold.woff2') format('woff2');
 }
 
 body {
@@ -67,12 +85,10 @@ a {
     color: var(--сolor-black-10);
 }
 
-.site-navigation a,
-.basket {
+.site-navigation a, .basket {
     font-weight: 500;
     line-height: 30px;
     color: var(--сolor-black-10);
-    
 }
 
 .site-navigation a:hover {
@@ -237,16 +253,13 @@ a {
     list-style: none;
 }
 
-
 .companies-site:hover {
     color: var(--сolor-black-10);
-
 }
+
 .companies-site:active {
     opacity: 0.1;
-
 }
-
 
 /*footer*/
 
@@ -269,11 +282,11 @@ a {
     color: var(--color-white);
     background-color: var(--color-red-15);
 }
+
 .social-item:active {
     color: var(--color-white);
     background-color: var(--color-red-20);
 }
-
 
 .footer-bottom {
     display: flex;
@@ -300,3 +313,39 @@ a {
     list-style: none;
 }
 
+/* CATALOG */
+
+/* button */
+
+.filter-button {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--сolor-black-10);
+    background-color: var(--color-grey-10);
+    border-radius: 3px;
+    width: 260px;
+    height: 50px;
+}
+
+.filter-button:hover {
+    background-color: var(--сolor-grey-15);
+}
+
+.filter-button:active {
+    background-color: var(--color-grey-25);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    border-radius: 3px;
+}
+
+.button-price:hover {
+    background-color: var(--color-red-15);
+    border-radius: 3px;
+}
+
+.button-price:active {
+    background-color: var(--color-red-20);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    border-radius: 3px;
+}
