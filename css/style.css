@@ -5,14 +5,18 @@
     --color-grey-25: #D5D5D5;
     --сolor-black-10: #000000;
     --color-black-15: #444444;
-    --color-black-17:  #666666;
+    --color-black-17: #666666;
     --color-black-20: #283136;
     --color-white: #FFFFFF;
     --color-red-10: #FB565A;
     --color-red-15: #E74246;
     --color-red-20: #D7373B;
     --color-green: #00CA74;
+    --color-green-5: #00BC6C;
+    --color-green-10: #00AA62;
     --color-yellow: #EFC849;
+    --color-yellow-5: #EAB534;
+    --color-yellow-10: #E5A722;
 }
 
 @font-face {
@@ -149,6 +153,28 @@ a {
 
 .button:hover {
     background-color: var(--color-red-15);
+}
+
+.button.button-green:hover {
+    background-color: var(--color-green-5);
+    border-radius: 3px;
+}
+
+.button.button-green:active {
+    background-color: var(--color-green-10);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    border-radius: 3px;
+}
+
+.button.button-yellow:hover {
+    background-color: var(--color-yellow-5);
+    border-radius: 3px;
+}
+
+.button.button-yellow:active {
+    background-color: var(--color-yellow-10);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    border-radius: 3px;
 }
 
 /*heading*/
@@ -322,6 +348,7 @@ a {
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
+    color: var(--color-black-17);
 }
 
 .map-form-phone {
