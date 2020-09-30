@@ -167,7 +167,6 @@ a {
     font-style: normal;
     text-transform: uppercase;
     color: var(--сolor-black-10);
-
 }
 
 .about-main-heading {
@@ -314,6 +313,22 @@ a {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.map-form-address {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.map-form-phone {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
 }
 
 /* CATALOG */
