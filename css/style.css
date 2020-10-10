@@ -80,6 +80,24 @@ a {
     height: auto;
 }
 
+/* slider-content */
+
+.slider-controls-button {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    font-size: 0;
+    border: 0;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
 /* Main navigation */
 
 .main-content-top {
@@ -113,17 +131,32 @@ a {
 .basket {
     display: flex;
     align-items: center;
-    position: relative;
 }
 
-.basket-link::after {
-    content: ;
+.basket-link {
+    position: relative;
+    ;
+}
+
+.basket-link::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/index-basket-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    left: -25px;
+    top: 34px;
+    position: absolute;
+    background-size: contain;
 }
 
 .site-navigation a, .basket-link {
     font-weight: 500;
     line-height: 30px;
     color: var(--сolor-black-10);
+    display: block;
+    padding: 25px 20px;
 }
 
 .site-navigation a:hover {
@@ -142,7 +175,7 @@ a {
     color: var(--color-red-10);
 }
 
-.basket-link:active {
+.basket:active {
     opacity: 0.3;
 }
 
@@ -407,6 +440,7 @@ sup {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 81px;
     height: 81px;
     background-color: var(--color-grey-20);
@@ -436,7 +470,7 @@ sup {
 
 .map-form {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
     width: 319px;
     background-color: var(--color-white);
