@@ -370,6 +370,7 @@ sup {
 .services-content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 100px;
     margin-top: 80px;
     padding-bottom: 73px;
     border-bottom: solid 2px var(--color-grey-10);
