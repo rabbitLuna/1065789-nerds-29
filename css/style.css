@@ -979,7 +979,7 @@ fieldset {
     height: 21px;
     font-size: 0;
     border: 0;
-    background: transparents;
+    background: transparent;
 }
 
 .modal-close::before, .modal-close::after {
