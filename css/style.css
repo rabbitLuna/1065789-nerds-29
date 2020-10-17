@@ -66,9 +66,8 @@ body {
 }
 
 .wrapper {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
-    width: 100%;
 }
 
 a {
@@ -82,8 +81,14 @@ a {
 
 /* slider-content */
 
-.slider-controls-button {
+.slider-controls {
     position: absolute;
+    bottom: 96px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-controls-button {
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -92,6 +97,22 @@ a {
     border: 0;
     margin: 0 6px;
     cursor: pointer;
+}
+
+.slider-controls-active {
+    position: relative;
+}
+
+.slider-controls-active::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #C1C1C1;
+    box-sizing: border-box;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
 }
 
 .hide {
@@ -434,13 +455,14 @@ sup {
 
 .social {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 
 .social-item {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 81px;
     height: 81px;
@@ -478,7 +500,13 @@ sup {
     justify-content: space-between;
     align-items: center;
     width: 319px;
+    height: 308px;
     background-color: var(--color-white);
+    margin-top: 54px;
+}
+
+.map-form-wp {
+    padding: 49px 76px 47px 50px;
 }
 
 .map-wrapper {
@@ -504,7 +532,6 @@ sup {
 .about-text {
     margin-right: 149px;
 }
-
 
 .slider-item {
     display: flex;
@@ -558,7 +585,6 @@ sup {
 .catalog-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-
 }
 
 /* button */
@@ -857,22 +883,113 @@ fieldset {
     color: var(--color-black-17);
 }
 
-.radio-label {
+.radio-button {
     display: flex;
-    flex-flow: column wrap;
-    font-weight: 400;
-    font-style: normal;
 }
 
-.radio-button {}
+.radio-button-input {
+    display: none;
+}
 
-.radio {
-    background-color: var(--color-black-16);
+.radio-button-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 36px;
+    position: relative;
+    opacity: 0.3;
+}
+
+.radio-button-label:hover {
+    opacity: 1;
+}
+
+.checkbox-button-label:disabled {
+    opacity: 0.1;
+}
+
+.radio-button-label::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    border: 4px solid var(--color-black-16);
     width: 25px;
     height: 25px;
     opacity: 0.4;
     border-radius: 50%;
+    box-sizing: border-box;
+    left: 0;
+    top: 0;
 }
+
+.radio-button-input:checked+.radio-button-label::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--color-black-16);
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    opacity: 0.3;
+}
+
+/* #region checkbox */
+
+.checkbox-button {
+    display: flex;
+}
+
+.checkbox-button-input {
+    display: none;
+}
+
+.checkbox-button-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 36px;
+    position: relative;
+    opacity: 0.3;
+}
+
+.checkbox-button-label:hover {
+    opacity: 1;
+}
+
+.checkbox-button-label:disabled {
+    opacity: 0.1;
+}
+
+.checkbox-button-label::after {
+    content: "";
+    position: absolute;
+    background-image: url(../img/square.svg);
+    left: 8px;
+    top: 8px;
+    width: 27px;
+    height: 23px;
+    background-repeat: no-repeat;
+}
+
+.checkbox-button-input:checked+.checkbox-button-label::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 23px;
+    background-image: url(../img/checkbox-on.svg);
+    left: 13px;
+    top: 9px;
+    background-repeat: no-repeat;
+}
+
+.checkbox-button-input:checked+.checkbox-button-label::after {
+    opacity: 0;
+}
+
+/* #endregion */
+
+/**/
 
 .filter-features {
     display: flex;
@@ -887,7 +1004,6 @@ fieldset {
 .catalog {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
 }
 
 .main-content-heading {
@@ -959,44 +1075,60 @@ fieldset {
 
 .modal {
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
+    top: 50%;
+    right: 50%;
+    margin-top: -295px;
+    margin-right: -480px;
     box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
     background-position: 0 0;
     background-repeat: repeat;
     background-color: var(--color-white);
+    width: 960px;
+    height: 590px;
+    box-sizing: border-box;
+    padding-top: 63px;
+    padding-bottom: 84px;
+    padding-left: 100px;
+    padding-right: 99px;
     display: none;
 }
 
-.modal-map {
-    width: 960px;
-    height: 590px;
-    background-color: var(--color-white);
-    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-    position: relative;
+.modal-visible {
+    display: block;
+}
+
+.modal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-heading {
+    font-size: 45px;
+    line-height: 52, 73px;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .modal-close {
-    cursor: pointer;
-    position: absolute;
-    top: 80px;
-    right: 90px;
+    position: relative;
+    top: 0;
+    right: -34px;
     width: 21px;
     height: 21px;
-    font-size: 0;
+    background-color: transparent;
     border: 0;
-    background: transparents;
+    cursor: pointer;
 }
 
 .modal-close::before, .modal-close::after {
     content: "";
     position: absolute;
+    top: 10px;
+    left: 2px;
     width: 19px;
     height: 3px;
-    background-color: var(--color-red-20);
+    background-color: var(--color-red-10);
 }
 
 .modal-close::before {
@@ -1007,5 +1139,41 @@ fieldset {
     transform: rotate(-45deg);
 }
 
-.modal-heading {
-    font-size: 45px;
+.modal-user {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    padding-bottom: 34px;
+}
+
+.modal-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-comment {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 16px 14px 16px 14px;
+}
+
+.text-comment {
+    width: 760px;
+    padding-top: 16px;
+    padding-bottom: 84px;
+    padding-left: 16px;
+    resize: none;
+}
+
+.modal-button {
+    position: absolute;
+    width: 259px;
+    margin-top: 47px;
+}
