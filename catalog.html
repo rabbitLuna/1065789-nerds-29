@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/normalize.css" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -75,46 +75,66 @@
 
                         <fieldset class="filter-grid">
                             <legend class="filter-heading">Сетка</legend>
-                            <label class="radio-label">
-                                <input type="radio" name="radio-grid" class="radio-button" value="adaptive">Адаптивная
-                            </label>
 
-                            <label class="radio-label">
-                                <input type="radio" name="radio-grid" class="radio-button" value="rubber"
-                                    checked>Резиновая
-                            </label>
+                            <div class="radio-button">
+                                <input type="radio" id="radio-adaptive" name="radio-grid" class="radio-button-input"
+                                    value="adaptive" checked>
+                                <label class="radio-button-label" for="radio-adaptive">Адаптивная</label>
+                            </div>
 
-                            <label class="radio-label">
-                                <input type="radio" name="radio-grid" class="radio-button" value="fixed">Фиксированная
-                            </label>
+
+                            <div class="radio-button">
+                                <input type="radio" id="radio-rubber" name="radio-grid" class="radio-button-input"
+                                    value="rubber">
+                                <label class="radio-button-label" for="radio-rubber"> Резиновая</label>
+                            </div>
+
+
+
+                            <div class="radio-button">
+                                <input type="radio" id="radio-fixed" name="radio-grid" class="radio-button-input"
+                                    value="fixed">
+                                <label class="radio-button-label" for="radio-fixed"> Фиксированная</label>
+                            </div>
 
                         </fieldset>
 
                         <fieldset class="filter-features">
                             <legend class="filter-heading">Особенности</legend>
 
-                            <input class="checkbox" type="checkbox" name="filter-features-slider"
-                                id="filter-features-slider" checked>
-                            <label class="checkbox-label" for="filter-features-slider">Слайдер</label>
+                            <div class="checkbox-button">
+                                <input class="checkbox-button-input" id="checkbox-fixed" type="checkbox"
+                                    id="filter-features-slider" checked>
+                                <label class="checkbox-button-label" for="checkbox-fixed">Слайдер</label>
+                            </div>
 
-                            <input class="checkbox" type="checkbox" name="filter-features-advantages"
-                                id="filter-features-advantages">
-                            <label class="checkbox-label" for="slider-features-advantages">Блок преимуществ</label>
+                            <div class="checkbox-button">
+                                <input class="checkbox-button-input" id="checkbox-advantages" type="checkbox"
+                                    id="filter-features-slider" checked>
+                                <label class="checkbox-button-label" for="checkbox-advantages">Блок преимуществ</label>
+                            </div>
 
-                            <input class="checkbox" type="checkbox" name="filter-features-news"
-                                id="filter-features-news" checked>
-                            <label class="checkbox-label" for="filter-features-news">Новости</label>
+                            <div class="checkbox-button">
+                                <input class="checkbox-button-input" id="checkbox-news" type="checkbox"
+                                    id="filter-features-slider" checked>
+                                <label class="checkbox-button-label" for="checkbox-news">Новости</label>
+                            </div>
 
-                            <input class="checkbox" type="checkbox" name="filter-features-gallery"
-                                id="filter-features-gallery">
-                            <label class="checkbox-label" for="filter-features-gallery">Галерея</label>
+                            <div class="checkbox-button">
+                                <input class="checkbox-button-input" id="checkbox-gallery" type="checkbox"
+                                    id="filter-features-slider" checked>
+                                <label class="checkbox-button-label" for="checkbox-gallery">Галерея</label>
+                            </div>
 
-                            <input class="checkbox" type="checkbox" name="filter-features-basket"
-                                id="filter-features-basket">
-                            <label class="checkbox-label" for="filter-features-basket">Корзина</label>
-                        </fieldset>
+                            <div class="checkbox-button">
+                                <input class="checkbox-button-input" id="checkbox-basket" type="checkbox"
+                                    id="filter-features-slider" checked>
+                                <label class="checkbox-button-label" for="checkbox-basket">Корзина</label>
+                            </div>
 
-                        <button class="button filter-button" type="submit">Показать</button>
+
+
+                            <button class="button filter-button" type="submit">Показать</button>
                     </form>
                 </section>
 
@@ -158,7 +178,9 @@
                                 alt="Sedona">
 
                             <div class="catalog-item-info">
-                                <h2 class="info-heading">Sedona</h2>
+                                <a href="#!">
+                                    <h2 class="info-heading">Sedona</h2>
+                                </a>
                                 <p class="info-text">Информационный сайт для туристов</p>
                                 <button class="button button-price" type="button">9 900 ₽</button>
                             </div>
@@ -171,7 +193,9 @@
                             <img class="catalog-item-img" src="img/catalog-img-pink.jpg" width="359" height="578"
                                 alt="Pink">
                             <div class="catalog-item-info">
-                                <h2 class="info-heading">Pink</h2>
+                                <a href="#!">
+                                    <h2 class="info-heading">Pink</h2>
+                                </a>
                                 <p class="info-text">Информационный сайт для туристов</p>
                                 <button class="button button-price" type="button">9 900 ₽</button>
                             </div>
@@ -184,7 +208,9 @@
                             <img class="catalog-item-img" src="img/catalog-img-barbershop.jpg" width="359" height="578"
                                 alt="Borodinsky">
                             <div class="catalog-item-info">
-                                <h2 class="info-heading">Borodinsky</h2>
+                                <a href="#!">
+                                    <h2 class="info-heading">Borodinsky</h2>
+                                </a>
                                 <p class="info-text">Информационный сайт для туристов</p>
                                 <button class="button button-price" type="button">9 900 ₽</button>
                             </div>
@@ -197,7 +223,9 @@
                             <img class="catalog-item-img" src="img/catalog-img-mishka.jpg" width="359" height="578"
                                 alt="Mishka">
                             <div class="catalog-item-info">
-                                <h2 class="info-heading">Mishka</h2>
+                                <a href="#!">
+                                    <h2 class="info-heading">Mishka</h2>
+                                </a>
                                 <p class="info-text">Информационный сайт для туристов</p>
                                 <button class="button button-price" type="button">9 900 ₽</button>
                             </div>
@@ -210,7 +238,9 @@
                             <img class="catalog-item-img" src="img/catalog-img-aplus.jpg" width="359" height="578"
                                 alt="Aplus">
                             <div class="catalog-item-info">
-                                <h2 class="info-heading">Aplus</h2>
+                                <a href="#!">
+                                    <h2 class="info-heading">Aplus</h2>
+                                </a>
                                 <p class="info-text">Информационный сайт для туристов</p>
                                 <button class="button button-price" type="button">9 900 ₽</button>
                             </div>
@@ -223,7 +253,9 @@
                             <img class="catalog-item-img" src="img/catalog-img-kvast.jpg" width="359" height="578"
                                 alt="Кваст">
                             <div class="catalog-item-info">
-                                <h2 class="info-heading">Кваст</h2>
+                                <a href="#!">
+                                    <h2 class="info-heading">Кваст</h2>
+                                </a>
                                 <p class="info-text">Информационный сайт для туристов</p>
                                 <button class="button button-price" type="button">9 900 ₽</button>
                             </div>
