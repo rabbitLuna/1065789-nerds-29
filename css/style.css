@@ -115,9 +115,7 @@ a {
     left: 5px;
 }
 
-.hide {
-    display: none;
-}
+
 
 /* Main navigation */
 
@@ -776,8 +774,12 @@ sup {
 .slider-info {
     padding-top: 78px;
     padding-bottom: 80px;
+    display: none;
 }
 
+.slider-info-active {
+    display: block;
+}
 .slider {
     width: 260px;
     height: 80px;
