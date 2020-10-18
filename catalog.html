@@ -296,10 +296,12 @@
             <div class="wrapper map-wrapper">
 
                 <div class="map-form">
-                    <h3 class="map-form-heading">Nerds design studio</h3>
-                    <span class="map-form-address">91186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-                    <a href="tel:78122757575" class="map-form-phone">тел. +7 (812) 275-75-75</a>
-                    <a href="#" class="button map-form-button">Напишите нам</a>
+                    <div class="map-form-wp">
+                        <h3 class="map-form-heading">Nerds design studio</h3>
+                        <span class="map-form-address">91186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+                        <a href="tel:78122757575" class="map-form-phone">тел. +7 (812) 275-75-75</a>
+                        <button class="button map-form-button" type="button">Напишите нам</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -308,17 +310,17 @@
             <div class="footer-bottom">
                 <ul class="social">
                     <li class="social-item">
-                        <a href="#!">
-                            <img src="img/footer-vk-icon.svg" width="26" height="15" alt="vk">
+                        <a href="#">
+                            <img src="img/footer-vk-icon.svg" width="21" height="21" alt="vk">
                         </a>
                     </li>
                     <li class="social-item">
-                        <a href="#!">
-                            <img src="img/footer-fb-icon.svg" width="12" height="22" alt="facebook">
+                        <a href="#">
+                            <img src="img/footer-fb-icon.svg" width="21" height="21" alt="facebook">
                         </a>
                     </li>
                     <li class="social-item">
-                        <a href="#!">
+                        <a href="#">
                             <img src="img/footer-inst-icon.svg" width="21" height="21" alt="instagram">
                         </a>
                     </li>
@@ -332,4 +334,32 @@
         </div>
 
     </footer>
+
+
+    <section class="modal">
+
+        <form class="modal-form">
+            <div class="modal-title">
+                <h2 class="modal-heading">Напишите нам</h2>
+                <button class="modal-close" type="button"></button>
+            </div>
+            <div class="modal-user">
+                <label class="modal-comment" for="login">Ваше имя
+                    <input class="text" type="text" name="login" placeholder="Имя Фамилия">
+                </label>
+
+                <label class="modal-comment" for="email">Ваш e-mail
+                    <input class="text" type="text" name="email" placeholder="email@example.com">
+                </label>
+            </div>
+
+            <label class="modal-comment"> Текст письма
+                <textarea class="text-comment">В свободной форме</textarea>
+            </label>
+
+            <button class="button modal-button" type="submit">Отправить</button>
+        </form>
+
+        <script src="js/script.js"></script>
+    </section>
 </body>
