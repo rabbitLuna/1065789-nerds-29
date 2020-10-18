@@ -283,6 +283,7 @@ a {
     font-style: normal;
     text-transform: uppercase;
     color: var(--сolor-black-10);
+    margin: 0;
 }
 
 .about-main-heading {
@@ -292,6 +293,7 @@ a {
     font-style: normal;
     color: var(--сolor-black-10);
     margin-bottom: 32px;
+    margin: 0;
 }
 
 .about-subtitle {
@@ -311,6 +313,7 @@ a {
     font-style: normal;
     text-transform: uppercase;
     color: var(--сolor-black-10);
+    margin: 0;
 }
 
 .main-footer-heading {
@@ -319,6 +322,7 @@ a {
     line-height: 36px;
     font-style: normal;
     color: var(--сolor-black-10);
+    margin: 0;
 }
 
 .visually-hidden {
@@ -532,7 +536,7 @@ sup {
 }
 
 .slider-item {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -547,6 +551,7 @@ sup {
     font-size: 16px;
     line-height: 18px;
     color: var(--color-black-17);
+   
 }
 
 .map-form-phone {
@@ -633,6 +638,7 @@ sup {
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .catalog-filter-sort {
@@ -645,6 +651,7 @@ sup {
     margin: 25px;
     text-transform: uppercase;
     color: var(--сolor-black-10);
+    margin: 0;
 }
 
 .catalog-filter-sort a {
@@ -774,11 +781,10 @@ sup {
 .slider-info {
     padding-top: 78px;
     padding-bottom: 80px;
-    display: none;
 }
 
-.slider-info-active {
-    display: block;
+.slider-item-active {
+    display: flex;
 }
 .slider {
     width: 260px;
@@ -788,6 +794,7 @@ sup {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 14px;
 }
 
 .slider-strip {
@@ -868,6 +875,9 @@ fieldset {
     font-style: normal;
     color: var(--сolor-black-10);
     text-transform: uppercase;
+    margin-bottom: 48px;
+    margin: 0;
+    
 }
 
 .info-heading {
@@ -877,16 +887,19 @@ fieldset {
     font-style: normal;
     text-transform: uppercase;
     color: var(--сolor-black-10);
+    margin: 0;
 }
 
 .info-text {
     font-size: 16px;
     line-height: 18px;
     color: var(--color-black-17);
+    margin: 0;
 }
 
 .radio-button {
     display: flex;
+    margin-bottom: 15px;
 }
 
 .radio-button-input {
@@ -900,6 +913,7 @@ fieldset {
     padding-left: 36px;
     position: relative;
     opacity: 0.3;
+    margin: 0;
 }
 
 .radio-button-label:hover {
@@ -940,6 +954,7 @@ fieldset {
 
 .checkbox-button {
     display: flex;
+    margin-bottom: 17px;
 }
 
 .checkbox-button-input {
@@ -1019,6 +1034,7 @@ fieldset {
     padding-bottom: 108px;
     margin: 0;
     text-align: center;
+    margin-bottom: 55px;
 }
 
 /**/
