@@ -22,23 +22,23 @@ const sliderButtonOne = document.querySelector('.slider-controls-one')
 const sliderButtonTwo = document.querySelector('.slider-controls-two')
 const sliderbuttonThree = document.querySelector('.slider-controls-three')
 
-const sliderOne = document.querySelector('.slider-info-one')
-const sliderTwo = document.querySelector('.slider-info-two')
-const sliderThree = document.querySelector('.slider-info-three')
+const sliderOne = document.querySelector('.slider-item-one')
+const sliderTwo = document.querySelector('.slider-item-two')
+const sliderThree = document.querySelector('.slider-item-three')
 
 sliderButtonOne.addEventListener('click', function () {
-  sliderOne.classList.add('slider-info-active')
-  sliderTwo.classList.remove('slider-info-active')
-  sliderThree.classList.remove('slider-info-active')
+  sliderOne.classList.add('slider-item-active')
+  sliderTwo.classList.remove('slider-item-active')
+  sliderThree.classList.remove('slider-item-active')
 
   sliderButtonOne.classList.add("slider-controls-active")
   sliderButtonTwo.classList.remove('slider-controls-active')
   sliderbuttonThree.classList.remove('slider-controls-active')
 })
 sliderButtonTwo.addEventListener('click', function () {
-  sliderOne.classList.remove('slider-info-active')
-  sliderTwo.classList.add('slider-info-active')
-  sliderThree.classList.remove('slider-info-active')
+  sliderOne.classList.remove('slider-item-active')
+  sliderTwo.classList.add('slider-item-active')
+  sliderThree.classList.remove('slider-item-active')
 
 
   sliderButtonOne.classList.remove("slider-controls-active")
@@ -47,9 +47,9 @@ sliderButtonTwo.addEventListener('click', function () {
 
 })
 sliderbuttonThree.addEventListener('click', function () {
-  sliderOne.classList.remove('slider-info-active')
-  sliderTwo.classList.remove('slider-info-active')
-  sliderThree.classList.add('slider-info-active')
+  sliderOne.classList.remove('slider-item-active')
+  sliderTwo.classList.remove('slider-item-active')
+  sliderThree.classList.add('slider-item-active')
 
 
   sliderButtonOne.classList.remove("slider-controls-active")
