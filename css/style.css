@@ -273,7 +273,11 @@ a {
     line-height: 55px;
     font-style: normal;
     color: var(--сolor-black-10);
-    margin-bottom: 25px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 25px;
+    display: block;
 }
 
 .services-heading {
@@ -284,6 +288,9 @@ a {
     text-transform: uppercase;
     color: var(--сolor-black-10);
     margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 16px;
 }
 
 .about-main-heading {
@@ -292,9 +299,12 @@ a {
     line-height: 45px;
     font-style: normal;
     color: var(--сolor-black-10);
-    margin-bottom: 32px;
+    display: block;
+    padding: 0;
     margin: 0;
+    
 }
+
 
 .about-subtitle {
     font-size: 16px;
@@ -303,7 +313,10 @@ a {
     font-style: normal;
     text-transform: uppercase;
     color: var(--сolor-black-10);
-    margin-bottom: 23px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 31px;
 }
 
 .map-form-heading {
@@ -314,7 +327,10 @@ a {
     text-transform: uppercase;
     color: var(--сolor-black-10);
     margin: 0;
+    padding: 0;
+    padding-bottom: 23px;
 }
+
 
 .main-footer-heading {
     font-size: 36px;
@@ -322,7 +338,10 @@ a {
     line-height: 36px;
     font-style: normal;
     color: var(--сolor-black-10);
+    display: block;
+    padding: 0;
     margin: 0;
+    padding-bottom: 10px;
 }
 
 .visually-hidden {
@@ -333,14 +352,25 @@ a {
     margin: -1px;
 }
 
+.heading-two {
+    display: block;
+    width: 515px;
+}
+
 /*text*/
 
+.main-footer-offer {
+
+}
 .text {
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     font-style: normal;
     color: var(--color-black-15);
+    padding: 0;
+    margin: 0;
+    
 }
 
 .slider-slogan {
@@ -348,7 +378,10 @@ a {
 }
 
 .about-slogan {
-    margin-bottom: 40px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 40px;
+    padding-top: 32px;
 }
 
 /*table*/
@@ -384,10 +417,22 @@ sup {
     font-style: normal;
 }
 
+.about-img {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 37px;
+}
+
+.about-table {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 74px;
+}
 /*services*/
 
 .services {
-    margin-bottom: 73px;
+    margin-bottom: 39px;
 }
 
 .services-content {
@@ -403,6 +448,10 @@ sup {
     width: 300px;
 }
 
+
+.services-slogan {
+    padding-bottom: 32px;
+}
 /*companies*/
 
 .companies {
@@ -551,6 +600,9 @@ sup {
     font-size: 16px;
     line-height: 18px;
     color: var(--color-black-17);
+    margin: 0;
+    display: block;
+    padding-bottom: 20px;
    
 }
 
@@ -560,6 +612,10 @@ sup {
     font-size: 16px;
     line-height: 18px;
     color: var(--color-black-17);
+    margin: 0;
+    padding: 0;
+    padding-bottom: 37px;
+    display: block;
 }
 
 .about-list {
@@ -1175,13 +1231,7 @@ fieldset {
     flex-direction: column;
 }
 
-.text {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 400;
-    font-style: normal;
-    padding: 16px 14px 16px 14px;
-}
+
 
 .text-comment {
     width: 760px;
