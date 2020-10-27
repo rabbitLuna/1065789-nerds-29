@@ -1248,3 +1248,28 @@ fieldset {
     box-sizing: border-box;
     border-radius: 3px;
 }
+
+.text-input:hover {
+    border: 2px solid #B4B9BB;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.text-input:focus {
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.text-comment:hover {
+    border: 2px solid #B4B9BB;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.text-comment:focus {
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+}
