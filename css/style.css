@@ -354,7 +354,7 @@ a {
 
 /*text*/
 
-.main-footer-offer {}
+
 
 .text {
     font-size: 16px;
@@ -689,6 +689,8 @@ sup {
     font-style: normal;
     text-transform: uppercase;
     margin: 0;
+    padding: 0;
+    margin-bottom: 48px;
 }
 
 .catalog-filter-sort {
@@ -702,8 +704,13 @@ sup {
     text-transform: uppercase;
     color: var(--сolor-black-10);
     margin: 0;
+    padding: 0;
+   
 }
 
+.catalog-filter-sort-item {
+    margin-right: 25px;
+}
 .catalog-filter-sort a {
     color: var(--сolor-black-10);
     opacity: 0.3;
@@ -769,6 +776,9 @@ sup {
     align-items: center;
     justify-content: center;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
 }
 
 .pagination-item {
@@ -785,7 +795,11 @@ sup {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-right: 11px;
 }
+
 
 .pagination-item:hover {
     background-color: var(--сolor-grey-15);
@@ -808,6 +822,9 @@ sup {
     background-color: var(--color-white);
     border: solid 3px var(--color-grey-10);
     box-sizing: border-box;
+    margin: 0;
+    margin-right: 11px;
+    
 }
 
 .pagination-next {
@@ -927,7 +944,7 @@ fieldset {
     color: var(--сolor-black-10);
     text-transform: uppercase;
     margin-bottom: 48px;
-    margin: 0;
+    padding: 0;
 }
 
 .info-heading {
@@ -938,6 +955,8 @@ fieldset {
     text-transform: uppercase;
     color: var(--сolor-black-10);
     margin: 0;
+    padding-bottom: 12px;
+    padding-top: 26px;
 }
 
 .info-text {
@@ -945,6 +964,7 @@ fieldset {
     line-height: 18px;
     color: var(--color-black-17);
     margin: 0;
+    padding-bottom: 32px;
 }
 
 .radio-button {
@@ -1271,5 +1291,4 @@ fieldset {
     border: 2px solid #000000;
     box-sizing: border-box;
     border-radius: 3px;
-}
 }
