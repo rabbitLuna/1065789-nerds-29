@@ -862,7 +862,9 @@ sup {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 48px;
     margin-bottom: 14px;
+
 }
 
 .slider-strip {
@@ -874,9 +876,10 @@ sup {
 
 .slider-active-strip {
     position: absolute;
-    left: 37px;
+    left: 0;
     right: 67px;
     height: 2px;
+    width: 138px;
     background-color: var(--color-green);
 }
 
@@ -891,12 +894,12 @@ sup {
 
 .toggle-one {
     position: absolute;
-    left: 25px;
+    left: -15px;
 }
 
 .toggle-two {
     position: absolute;
-    right: 67px;
+    right: 53px;
 }
 
 .toggle-dot {
@@ -936,6 +939,17 @@ fieldset {
 
 /*filter-grid*/
 
+.filter-price {
+    padding: 0;
+    padding-bottom: 54px;
+}
+
+.filter-grid {
+    padding: 0;
+    padding-bottom: 46px;
+}
+
+
 .filter-heading {
     font-size: 18px;
     line-height: 30px;
@@ -943,7 +957,6 @@ fieldset {
     font-style: normal;
     color: var(--сolor-black-10);
     text-transform: uppercase;
-    margin-bottom: 48px;
     padding: 0;
 }
 
@@ -1025,6 +1038,9 @@ fieldset {
 .checkbox-button {
     display: flex;
     margin-bottom: 17px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
 }
 
 .checkbox-button-input {
@@ -1081,6 +1097,7 @@ fieldset {
 .filter-features {
     display: flex;
     flex-flow: column wrap;
+    padding: 0;
 }
 
 .wrapperone {
