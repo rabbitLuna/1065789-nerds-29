@@ -1192,9 +1192,9 @@ fieldset {
 .modal-close::before, .modal-close::after {
     content: "";
     position: absolute;
-    top: 10px;
-    left: 2px;
-    width: 19px;
+    top: 9px;
+    left: -2px;
+    width: 26px;
     height: 3px;
     background-color: var(--color-red-10);
 }
