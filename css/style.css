@@ -779,6 +779,7 @@ sup {
     margin: 0;
     padding: 0;
     margin-bottom: 60px;
+    margin-top: 55px;
 }
 
 .pagination-item {
@@ -931,6 +932,7 @@ sup {
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
+    padding-right: 33px;
 }
 
 fieldset {
@@ -957,7 +959,7 @@ fieldset {
     font-style: normal;
     color: var(--сolor-black-10);
     text-transform: uppercase;
-    padding: 0;
+    
 }
 
 .info-heading {
@@ -1069,7 +1071,7 @@ fieldset {
     position: absolute;
     background-image: url(../img/square.svg);
     left: 8px;
-    top: 8px;
+    top: 0px;
     width: 27px;
     height: 23px;
     background-repeat: no-repeat;
@@ -1081,8 +1083,8 @@ fieldset {
     width: 27px;
     height: 23px;
     background-image: url(../img/checkbox-on.svg);
-    left: 13px;
-    top: 9px;
+    left: 8px;
+    top: 0px;
     background-repeat: no-repeat;
 }
 
@@ -1108,6 +1110,7 @@ fieldset {
 .catalog {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 31px 41px;
 }
 
 .main-content-heading {
@@ -1128,8 +1131,7 @@ fieldset {
 
 .catalog-item {
     position: relative;
-    margin-right: 42px;
-    margin-bottom: 72px;
+  
 }
 
 .catalog-item:nth-child(2n) {
