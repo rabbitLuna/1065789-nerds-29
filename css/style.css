@@ -976,6 +976,16 @@ fieldset {
     padding-top: 26px;
 }
 
+.info-heading:hover {
+    color: var(--color-red-10);
+}
+
+.info-heading:active {
+    color: var(--сolor-black-10);
+    opacity: 0.3;
+}
+
+
 .info-text {
     font-size: 16px;
     line-height: 18px;
