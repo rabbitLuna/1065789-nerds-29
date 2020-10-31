@@ -355,8 +355,6 @@ a {
 
 /*text*/
 
-
-
 .text {
     font-size: 16px;
     font-weight: 400;
@@ -708,12 +706,12 @@ sup {
     margin: 0;
     padding: 0;
     margin-left: 270px;
-   
 }
 
 .catalog-filter-sort-item {
     margin-right: 25px;
 }
+
 .catalog-filter-sort a {
     color: var(--сolor-black-10);
     opacity: 0.3;
@@ -804,7 +802,6 @@ sup {
     margin-right: 11px;
 }
 
-
 .pagination-item:hover {
     background-color: var(--сolor-grey-15);
 }
@@ -828,7 +825,6 @@ sup {
     box-sizing: border-box;
     margin: 0;
     margin-right: 11px;
-    
 }
 
 .pagination-next {
@@ -868,7 +864,6 @@ sup {
     justify-content: center;
     margin-top: 35px;
     margin-bottom: 14px;
-
 }
 
 .slider-img {
@@ -959,7 +954,6 @@ fieldset {
     padding-bottom: 46px;
 }
 
-
 .filter-heading {
     font-size: 18px;
     line-height: 30px;
@@ -968,7 +962,6 @@ fieldset {
     color: var(--сolor-black-10);
     text-transform: uppercase;
     padding-bottom: 13px;
-    
 }
 
 .info-heading {
@@ -1008,12 +1001,9 @@ fieldset {
     position: relative;
     margin: 0;
     cursor: pointer;
-    
 }
 
-.radio-button-label:hover {
-    opacity: 1;
-}
+
 
 .checkbox-button-label:disabled {
     opacity: 0.1;
@@ -1031,6 +1021,10 @@ fieldset {
     box-sizing: border-box;
     left: 0;
     top: 0;
+}
+
+.radio-button-label:hover::after{
+    opacity: 1;
 }
 
 .radio-button-input:checked+.radio-button-label::before {
@@ -1066,18 +1060,9 @@ fieldset {
     padding-left: 36px;
     position: relative;
     cursor: pointer;
-    
-   
 }
 
-.checkbox-button-label:hover {
-    color: var(--color-black-20);
-   
-}
-
-.checkbox-button-label:disabled {
-    
-}
+.checkbox-button-label:disabled {}
 
 .checkbox-button-label::after {
     content: "";
@@ -1091,6 +1076,9 @@ fieldset {
     opacity: 0.4;
 }
 
+.checkbox-button-label:hover::after {
+    opacity: 1;
+}
 
 .checkbox-button-input:checked+.checkbox-button-label::after {
     background-image: url(../img/checkbox-on.svg);
@@ -1135,7 +1123,6 @@ fieldset {
 
 .catalog-item {
     position: relative;
-  
 }
 
 .catalog-item:nth-child(2n) {
@@ -1315,4 +1302,3 @@ fieldset {
     box-sizing: border-box;
     border-radius: 3px;
 }
-
