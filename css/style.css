@@ -1063,7 +1063,7 @@ fieldset {
     opacity: 1;
 }
 
-.radio-button:disabled {
+.radio-button.disabled {
     opacity: 0.3;
 }
 
@@ -1106,7 +1106,7 @@ fieldset {
     opacity: 1;
 }
 
-.checkbox-button:disabled {
+.checkbox-button.disabled {
     opacity: 0.3;
 }
 
@@ -1172,6 +1172,11 @@ fieldset {
 }
 
 .catalog-item:hover .catalog-item-info {
+    opacity: 1;
+}
+
+
+.catalog-item:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0 0 5px 5px;
     opacity: 1;
@@ -1183,12 +1188,6 @@ fieldset {
     box-sizing: border-box;
     border-radius: 0 0 5px 5px;
     display: block;
-}
-
-.catalog-item-img:hover{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0 0 5px 5px;
-    opacity: 1;
 }
 /*sort-direction-container*/
 
