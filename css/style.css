@@ -1182,6 +1182,7 @@ fieldset {
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     border-radius: 0 0 5px 5px;
+    display: block;
 }
 
 .catalog-item-img:hover{
