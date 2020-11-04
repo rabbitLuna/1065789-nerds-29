@@ -507,10 +507,12 @@ sup {
     padding-right: 32px;
     padding-left: 32px;
     position: relative;
+    margin: 0;
 }
 
 .companies-site-item {
     position: relative;
+    line-height: 0;
 }
 
 .companies-site-item::after {
@@ -615,11 +617,9 @@ sup {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
- 
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-bottom: 46px;
     border-bottom: solid 2px var(--color-grey-10);
 }
 
