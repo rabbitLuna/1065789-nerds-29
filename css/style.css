@@ -229,7 +229,7 @@ a {
 
 .button.button-large {
     min-width: 240px;
-    margin-bottom: 8px;
+
 }
 
 .button.button-green {
@@ -444,7 +444,7 @@ sup {
 
 .services-content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 300px 300px 300px;
     grid-gap: 100px;
     align-items: center;
     margin-top: 80px;
@@ -454,6 +454,7 @@ sup {
 
 .services-item {
     width: 300px;
+    line-height: 0;
 }
 
 .services-slogan {
