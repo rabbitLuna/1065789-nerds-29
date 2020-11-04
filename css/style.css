@@ -448,7 +448,7 @@ sup {
     grid-gap: 100px;
     align-items: center;
     margin-top: 80px;
-    padding-bottom: 73px;
+    padding-bottom: 80px;
     border-bottom: solid 2px var(--color-grey-10);
 }
 
@@ -595,7 +595,7 @@ sup {
 }
 
 .about-text {
-    margin-right: 149px;
+    width: 670px;
 }
 
 .slider-item {
