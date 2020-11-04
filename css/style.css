@@ -320,12 +320,16 @@ a {
     font-weight: 700;
     line-height: 24px;
     font-style: normal;
+    text-align: center;
     text-transform: uppercase;
     color: var(--сolor-black-10);
     display: block;
     padding: 0;
     margin: 0;
-    margin-bottom: 31px;
+    margin-bottom: 27px;
+
+    position: relative;
+    left: 2px;
 }
 
 .map-form-heading {
@@ -416,6 +420,10 @@ a {
     color: var(--сolor-black-10);
 }
 
+.about-table td {
+    padding: 0;
+}
+
 sup {
     font-size: 26px;
     font-weight: 700;
@@ -434,6 +442,8 @@ sup {
     padding: 0;
     margin: 0;
     margin-bottom: 74px;
+    width: 360px;
+    table-layout: fixed;
 }
 
 /*services*/
@@ -586,7 +596,7 @@ sup {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+ 
     margin: 0;
     padding: 0;
     list-style: none;
@@ -596,6 +606,7 @@ sup {
 
 .about-text {
     width: 670px;
+    margin-top: 35px;
 }
 
 .slider-item {
@@ -638,7 +649,7 @@ sup {
 .about-list-item {
     list-style: none;
     position: relative;
-    padding-left: 32px;
+    padding-left: 36px;
     padding-bottom: 25px;
 }
 
