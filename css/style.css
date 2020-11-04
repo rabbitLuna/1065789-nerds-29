@@ -410,6 +410,7 @@ a {
     line-height: 18px;
     font-style: normal;
     color: var(--color-black-15);
+    padding-top: 10px;
 }
 
 .about-table-interest {
