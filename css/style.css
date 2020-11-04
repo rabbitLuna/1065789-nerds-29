@@ -501,7 +501,7 @@ sup {
     display: flex;
     align-items: center;
     list-style: none;
-    padding-top: 46px;
+    padding-top: 54px;
     padding-bottom: 44px;
     padding-right: 32px;
     padding-left: 32px;
@@ -513,6 +513,19 @@ sup {
     position: relative;
     line-height: 0;
 }
+
+.companies-site-item:nth-child(2) {
+    margin-left: 97px;
+}
+.companies-site-item:nth-child(3) {
+    margin-left: 104px;
+
+}
+.companies-site-item:nth-child(4) {
+    margin-left: 120px;
+
+}
+
 
 .companies-site-item::after {
     content: "";
