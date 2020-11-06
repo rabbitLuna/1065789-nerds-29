@@ -291,6 +291,10 @@ a {
     display: block;
 }
 
+.slider-heading-three {
+    width: 500px;
+}
+
 .services-heading {
     font-size: 24px;
     font-weight: 700;
@@ -506,7 +510,6 @@ sup {
     list-style: none;
     padding-top: 54px;
     padding-bottom: 38px;
-    padding-right: 32px;
     padding-left: 32px;
     position: relative;
     margin: 0;
@@ -515,6 +518,7 @@ sup {
 .companies-site-item {
     position: relative;
     line-height: 0;
+    
 }
 
 .companies-site-item:nth-child(2) {
@@ -529,17 +533,35 @@ sup {
 
 }
 
-
 .companies-site-item::after {
     content: "";
     position: absolute;
     width: 2px;
     height: 52px;
     background-color: var(--color-grey-10);
-    right: -44px;
-    top: 50%;
-    margin-top: -26px;
+  
 }
+
+
+
+.companies-site-item:nth-child(1)::after {
+    top: 7px;
+    right: -50px;
+   }
+
+   .companies-site-item:nth-child(2)::after {
+    top: 15px;
+    right: -45px;
+   }
+
+   .companies-site-item:nth-child(3)::after {
+    top: -4px;
+    right: -56px;
+}
+
+
+
+
 
 .companies-site-item:last-child::after {
     display: none;
@@ -600,6 +622,7 @@ sup {
     flex-direction: row;
     align-items: center;
     margin-top: 68px;
+    margin-bottom: 76px;
 }
 
 .map {
@@ -727,7 +750,7 @@ sup {
     height: 50px;
     cursor: pointer;
     padding: 0;
-    margin: 0;
+    margin-top: 31px;
 
 }
 
@@ -787,7 +810,7 @@ sup {
     color: var(--сolor-black-10);
     margin: 0;
     padding: 0;
-    margin-left: 270px;
+    margin-left: 260px;
     position: relative;
     top: 7px;
     left: 5px;
@@ -864,9 +887,11 @@ sup {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-bottom: 60px;
-    margin-top: 55px;
+    margin-bottom: 56px;
+    margin-top: 58px;
+    margin-left: 3px;
 }
+
 
 .pagination-item {
     font-size: 16px;
@@ -1068,10 +1093,13 @@ fieldset {
     font-style: normal;
     color: var(--сolor-black-10);
     text-transform: uppercase;
-    padding-bottom: 13px;
+    padding-bottom: 15px;
 
 }
 
+.filter-heading-features {
+    padding-bottom: 14px;
+}
 
 
 
@@ -1084,7 +1112,8 @@ fieldset {
     color: var(--сolor-black-10);
     margin: 0;
     padding-bottom: 12px;
-    padding-top: 26px;
+    padding-top: 29px;
+    padding-left: 7px;
 }
 
 .info-heading:hover {
@@ -1168,7 +1197,7 @@ fieldset {
     display: flex;
     margin: 0;
     padding: 0;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
    
 }
 
@@ -1189,7 +1218,7 @@ fieldset {
     content: "";
     position: absolute;
     background-image: url(../img/square.svg);
-    left: 8px;
+    left: 0px;
     top: 0px;
     width: 27px;
     height: 23px;
