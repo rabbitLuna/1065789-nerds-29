@@ -742,6 +742,10 @@ sup {
     border-radius: 3px;
 }
 
+.button-price {
+    width: 200px;
+}
+
 .button-price:hover {
     background-color: var(--color-red-15);
     border-radius: 3px;
@@ -1054,7 +1058,7 @@ fieldset {
 .filter-grid {
     padding: 0;
     margin: 0;
-    padding-bottom: 46px;
+    padding-bottom: 30px;
 }
 
 .filter-heading {
