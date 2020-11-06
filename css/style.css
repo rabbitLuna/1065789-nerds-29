@@ -1020,6 +1020,10 @@ sup {
     font-size: 16px;
     line-height: 22px;
     text-align: center;
+    margin-left: 10px;
+    padding: 0;
+    vertical-align: middle;
+ 
 }
 
 .price {
@@ -1028,7 +1032,11 @@ sup {
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
-    padding-right: 33px;
+    
+}
+
+.price + .price {
+margin-left: 26px;
 }
 
 fieldset {
@@ -1039,11 +1047,13 @@ fieldset {
 
 .filter-price {
     padding: 0;
+    margin: 0;
     padding-bottom: 54px;
 }
 
 .filter-grid {
     padding: 0;
+    margin: 0;
     padding-bottom: 46px;
 }
 
