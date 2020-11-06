@@ -725,7 +725,10 @@ sup {
     border-radius: 3px;
     width: 260px;
     height: 50px;
-    cursor: pointer
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+
 }
 
 .filter-button:hover {
@@ -781,6 +784,9 @@ sup {
     margin: 0;
     padding: 0;
     margin-left: 270px;
+    position: relative;
+    top: 7px;
+    left: 5px;
 }
 
 .catalog-filter-sort-item {
@@ -1049,7 +1055,11 @@ fieldset {
     color: var(--сolor-black-10);
     text-transform: uppercase;
     padding-bottom: 13px;
+
 }
+
+
+
 
 .info-heading {
     font-size: 18px;
@@ -1142,10 +1152,10 @@ fieldset {
 
 .checkbox-button {
     display: flex;
-    margin-bottom: 17px;
     margin: 0;
     padding: 0;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
+   
 }
 
 .checkbox-button-input {
@@ -1193,6 +1203,7 @@ fieldset {
     display: flex;
     flex-flow: column wrap;
     padding: 0;
+    margin: 0;
 }
 
 
@@ -1210,7 +1221,7 @@ fieldset {
     font-style: normal;
     color: var(--сolor-black-10);
     background-color: var(--color-grey-10);
-    padding-top: 87px;
+    padding-top: 78px;
     padding-bottom: 108px;
     margin: 0;
     text-align: center;
@@ -1258,6 +1269,14 @@ fieldset {
     display: block;
 }
 /*sort-direction-container*/
+
+.sort-direction-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 11px;
+    top: 1px;
+}
 
 .sort-direction-button {
     border: 0;
