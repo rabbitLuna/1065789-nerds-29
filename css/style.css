@@ -795,11 +795,14 @@ sup {
     margin-right: 25px;
 }
 
-.catalog-filter-sort a {
+.catalog-filter-sort-link {
     color: var(--сolor-black-10);
     opacity: 0.3;
 }
 
+.catalog-filter-sort-link.active {
+    opacity: 1;
+}
 .catalog-filter-sort-item a:hover {
     opacity: 0.6;
 }
@@ -807,6 +810,7 @@ sup {
 .catalog-filter-sort-item a:active {
     color: var(--сolor-black-10);
 }
+
 
 /**/
 
@@ -1119,6 +1123,7 @@ fieldset {
     position: relative;
     margin: 0;
     cursor: pointer;
+    font-weight: 400;
 }
 
 .radio-button-label::after {
@@ -1139,6 +1144,9 @@ fieldset {
     opacity: 1;
 }
 
+.radio-button-input:focus + .radio-button-label:after {
+    opacity: 1;
+}
 .radio-button-input:checked+.radio-button-label::before {
     content: "";
     width: 9px;
@@ -1155,7 +1163,7 @@ fieldset {
     opacity: 1;
 }
 
-.radio-button-input:disabled+.radio-button-label {
+.radio-button-input:disabled+ .radio-button-label {
     opacity: 0.3;
 }
 
@@ -1177,6 +1185,7 @@ fieldset {
     padding-left: 36px;
     position: relative;
     cursor: pointer;
+    font-weight: 400;
 }
 
 .checkbox-button-label::after, .checkbox-button-label:focus::after {
@@ -1189,6 +1198,10 @@ fieldset {
     height: 23px;
     background-repeat: no-repeat;
     opacity: 0.4;
+}
+
+.checkbox-button-input:focus + .checkbox-button-label:after {
+    opacity: 1;
 }
 
 .checkbox-button-label:hover::after {
@@ -1294,6 +1307,9 @@ fieldset {
     outline: none;
 }
 
+.sort-direction-button.active {
+    opacity: 1
+}
 .sort-direction-button:hover {
     opacity: 0.2;
     ;
